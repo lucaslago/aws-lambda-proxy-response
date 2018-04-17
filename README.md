@@ -13,7 +13,7 @@ A small library that wraps object literal building for AWS lambda proxy integrat
 ## Usage
 
  ```javascript
-  const response = require('lambda-proxy-integration-response');
+  const response = require('lambda-proxy-integration-response')();
 
   exports.handler = (event, context, callback) => {
     
@@ -27,7 +27,7 @@ A small library that wraps object literal building for AWS lambda proxy integrat
   
    ```javascript
   // New async handler synthax
-  const response = require('lambda-proxy-integration-response');
+  const response = require('lambda-proxy-integration-response')();
 
   exports.handler = async event => response.ok();
   ```
@@ -53,9 +53,12 @@ const defaultParameters = {
   body: { message: 'Hello World' },
   headers: {'Content-Type': 'application/json' }
 };
-const response = require('lambda-proxy-integration-response').withDefaults(defaultParameters);
+
+const response = require('lambda-proxy-integration-response')(defaultParameters);
+
 response.ok();
 // { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: '{"message": "Hello World}'}
+
 response.ok({ body: { message: 'Hey', headers: {} } });
 // { statusCode: 200, headers: { }, body: '{"message": "Hey}'}
 ```
