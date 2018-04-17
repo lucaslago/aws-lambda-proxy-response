@@ -1,5 +1,3 @@
-# aws-lambda-proxy-response
-![](https://travis-ci.org/lucaslago/aws-lambda-proxy-response.svg?branch=master)
 AWS Lambda Proxy Integration Response
 =========
 
@@ -8,7 +6,7 @@ A small library that wraps object literal building for AWS lambda proxy integrat
 
 ## Installation
 
-  `npm install lambda-proxy-integration-response`
+  `npm install -S lambda-proxy-integration-response`
 
 ## Usage
 
@@ -33,7 +31,7 @@ A small library that wraps object literal building for AWS lambda proxy integrat
   ```
   
 
-2. Shorthand methods for common HTTP statuses
+## Shorthand methods for common HTTP statuses
   - `response.ok = response.createResponse({statusCode: 200, ...})`
   - `response.created = response.createResponse({statusCode: 201, ...})`
   - `response.deleted = response.createResponse({statusCode: 204, ...})`
