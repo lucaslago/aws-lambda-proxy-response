@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "engine": {
-    "node": "8.10.0"
+    "node": ">=6.4.0"
   },
   "scripts": {
     "test": "jest",
