@@ -7,7 +7,7 @@ A small library that wraps object literal building for AWS lambda proxy integrat
 
 ## Installation
 
-  `npm install lambda-proxy-integration-response`
+  `npm install -S lambda-proxy-integration-response`
 
 ## Usage
 
