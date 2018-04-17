@@ -52,9 +52,12 @@ const defaultParameters = {
   body: { message: 'Hello World' },
   headers: {'Content-Type': 'application/json' }
 };
+
 const response = require('lambda-proxy-integration-response').withDefaults(defaultParameters);
+
 response.ok();
 // { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: '{"message": "Hello World}'}
+
 response.ok({ body: { message: 'Hey', headers: {} } });
 // { statusCode: 200, headers: { }, body: '{"message": "Hey}'}
 ```
