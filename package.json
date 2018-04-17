@@ -1,5 +1,5 @@
 {
-  "name": "aws-lambda-proxy-response",
+  "name": "lambda-proxy-integration-response",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
