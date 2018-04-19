@@ -39,6 +39,7 @@ A small library that wraps object literal building for AWS lambda proxy integrat
   - `response.unauthorized = response.createResponse({statusCode: 401, ...})`
   - `response.forbidden = response.createResponse({statusCode: 403, ...})`
   - `response.notFound = response.createResponse({statusCode: 404, ...})`
+  - `response.unprocessableEntity= response.createResponse({statusCode: 422, ...})`
   - `response.serverError = response.createResponse({statusCode: 500, ...})`
 
 
