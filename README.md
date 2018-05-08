@@ -48,12 +48,12 @@ A small library that wraps object literal building for AWS lambda proxy integrat
 Default values for every response. It gets overriden if new values are provided during the function call.
 
 ```javascript
-const defaultParameters = {
+const options = {
   body: { message: 'Hello World' },
   headers: {'Content-Type': 'application/json' }
 };
 
-const response = require('lambda-proxy-integration-response')(defaultParameters);
+const response = require('lambda-proxy-integration-response')(options);
 
 response.ok();
 // { statusCode: 200, headers: { 'Content-Type': 'application/json' }, body: '{"message": "Hello World}'}
